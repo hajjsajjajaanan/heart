@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D I Love You Cube</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      background-image: url(Heart.jpg);
+      margin: 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cube-container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotateCube 6s infinite linear;
+    }
+
+    .cube:nth-child(1) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-position: center;
+      background-image: url(img1.jpg);
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff4b5c;
+      text-align: center;
+      padding: 10px;
+    }
+    .cube:nth-child(2) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-position: center;
+
+      background-size: cover;
+      background-image: url(img2.jpg);
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff4b5c;
+      text-align: center;
+      padding: 10px;
+    }
+    .cube:nth-child(3) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-position: center;
+
+      background-image: url(img3.jpg);
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff4b5c;
+      text-align: center;
+      padding: 5px;
+    }
+    .cube:nth-child(4) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-position: center;
+
+      background-size: cover;
+      background-image: url(img3.jpg);
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff4b5c;
+      text-align: center;
+      padding: 10px;
+    }
+    .cube:nth-child(5) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-position: center;
+
+      background-size: cover;
+      background-image: url(img4.jpg);
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff4b5c;
+      text-align: center;
+      padding: 10px;
+    }
+    .cube:nth-child(6) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-position: center;
+
+      background-size: cover;
+      background-image: url(img5.jpg);
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff4b5c;
+      text-align: center;
+      padding: 10px;
+    }
+    img{
+      height: 200px;
+      width: 150px;
+      
+    }
+    h1{
+      font-size: 200px;
+    }
+    .i{
+      position: absolute;
+      left: 120px;
+
+    }
+    .you{
+      position: absolute;
+      right: 40px;
+    }
+
+    .front  { transform: translateZ(70px); }
+    .back   { transform: rotateY(180deg) translateZ(70px); }
+    .left   { transform: rotateY(-90deg) translateZ(70px); }
+    .right  { transform: rotateY(90deg) translateZ(70px); }
+    .top    { transform: rotateX(90deg) translateZ(70px); }
+    .bottom { transform: rotateX(-90deg) translateZ(70px); }
+
+    @keyframes rotateCube {
+      0% {
+        transform: rotateX(0deg) rotateY(0deg);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg);
+      }
+    }
+
+    @media only screen and (max-width: 768px) and (max-aspect-ratio: 1/1.5) {
+      .cube-container {
+        width: 150px;
+        height: 150px;
+      }
+      h1 {
+        font-size: 100px;
+      }
+      .cube:nth-child(1){
+        height: 120px;
+        width: 120px;
+      }
+      .cube:nth-child(2){
+        height: 120px;
+        width: 120px;
+      }
+      .cube:nth-child(3){
+        height: 125px;
+        width: 125px;
+      }
+      .cube:nth-child(4){
+        height: 120px;
+        width: 120px;
+      }
+      .cube:nth-child(5){
+        height: 120px;
+        width: 120px;
+      }
+      .cube:nth-child(6){
+        height: 120px;
+        width: 120px;
+      }
+      .i{
+        position: absolute;
+        top: 10px;
+        left: 150px;
+      }
+      .you{
+        position: absolute;
+        bottom: 15px;
+        right: 95px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="i">I</h1>
+  <div class="cube-container">
+    
+    <div class="cube front">
+    </div>
+    <div class="cube back">
+    </div>
+    <div class="cube left">
+    </div>
+    <div class="cube right">
+    </div>
+    <div class="cube top">
+    </div>
+    <div class="cube bottom">
+    </div>
+    
+  </div>
+  <h1 class="you">You</h1>
+
+</body>
+</html>
